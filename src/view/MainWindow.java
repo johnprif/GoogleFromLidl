@@ -324,7 +324,7 @@ public class MainWindow {
 		nextPageButton = new JButton("Next Page");
 		nextPageButton.setVisible(false);
 		pageNumberLabel = new JLabel("Page 1");
-		searchEngineLabel = new JLabel("Search Engine");
+		searchEngineLabel = new JLabel("GoogleFromLidl");
 		queryTextField = new JTextField();
 		searchButton = new JButton("Search");
 		clearButton = new JButton("Clear");
