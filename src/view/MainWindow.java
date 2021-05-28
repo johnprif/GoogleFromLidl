@@ -249,9 +249,11 @@ public class MainWindow {
 		currentPage = 1;
 		pageNumberLabel.setText("Page "+String.valueOf(currentPage));
 		query=queryTextField.getText();
+		history.create(query);
 		if (query.equals("")) 
 		{
 			JOptionPane.showMessageDialog(frame, "You should type something in the text field \nTry again");
+			
 		}else 
 		{
 			try {
