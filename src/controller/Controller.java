@@ -20,7 +20,6 @@ public class Controller {
 	private static String INDEX_DIR = "index";
 	private static EnglishAnalyzer analyzer;
 	private static FSDirectory dir;
-	private static IndexWriterConfig config;
 	private static IndexWriter writer;
 	private static ScoreDoc[] hits;
 	private int pagesNumber;
@@ -32,6 +31,7 @@ public class Controller {
 	private ArrayList<ArrayList<ArrayList<String>>> contents = new ArrayList<ArrayList<ArrayList<String>>>(); // exei mesa ola ta tweetsLinks
 	private int ypoloipo;
 	private String[] suggestions;
+	private IndexWriterConfig config;
 
 	
 	public Controller() throws IOException {
@@ -99,13 +99,11 @@ public class Controller {
 		tweetsLinks = contents.get(page);
 		setContent(tweetsLinks.get(0).size());
 		setVisibleResults(true, page);
-		OurHighLighter kati = new OurHighLighter("Trump's", tweetsLinks);
-		kati.print();
 	}
 	
-	public void setVisibleResults(boolean flag, int ee)
+	public void setVisibleResults(boolean flag, int currentPage)
 	{
-		if(ypoloipo != 0 && ee == pagesNumber-1)
+		if(ypoloipo != 0 && currentPage == pagesNumber-1)
 		{			
 			for (int i = 0; i< ypoloipo; i++) {
 				System.out.println("ypoloipo = "+ ypoloipo);
@@ -117,7 +115,6 @@ public class Controller {
 			}
 		}else
 		{
-			System.out.println("ee = "+ ee);
 			for (int i = 0; i< 10; i++) {
 				listOfLabels.get(i).setVisible(flag);
 			}

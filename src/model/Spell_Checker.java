@@ -16,7 +16,6 @@ import org.apache.lucene.store.FSDirectory;
 
 public class Spell_Checker
 {
-	private String keyWord;
     private Directory directory;
     private PlainTextDictionary txt_dict;
     private SpellChecker checker;
@@ -24,12 +23,12 @@ public class Spell_Checker
     
 	public Spell_Checker(String keyWord) throws IOException
     {
-		this.keyWord = keyWord;
         directory = FSDirectory.open(Paths.get("Index_Dictionary"));
         txt_dict = new PlainTextDictionary(Paths.get("eng_dictionary.txt"));
         checker = new SpellChecker(directory);
-        System.out.print("\nBuilding index from the .txt dictionary took... ");
+        System.out.print("\nBuilding index from the .txt dictionary... ");
         checker.indexDictionary(txt_dict, new IndexWriterConfig(new KeywordAnalyzer()), false);
+        System.out.print("\nfinish! ");
         directory.close();       
         chooseAlgorithm("NGramDistance");        
         suggestions = checker.suggestSimilar(keyWord, 5);

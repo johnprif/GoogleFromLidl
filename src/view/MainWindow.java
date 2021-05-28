@@ -11,6 +11,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.CardLayout;
 
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.ButtonGroup;
 import java.awt.event.ActionListener;
@@ -38,8 +39,6 @@ public class MainWindow {
 	private static String query;
 	private static ArrayList<JLabel> listOfLabels;
 	private static ArrayList<MListener> listOfListeners;
-	private static ArrayList<String> searchHistory;
-	private static String indexHistoryPath;
 	private static HistoryManager history;
 	private JButton nextPageButton;
 	private JTextField queryTextField;
@@ -250,9 +249,11 @@ public class MainWindow {
 		currentPage = 1;
 		pageNumberLabel.setText("Page "+String.valueOf(currentPage));
 		query=queryTextField.getText();
-		if (query.equals("")) {
-		
-		}else {
+		if (query.equals("")) 
+		{
+			JOptionPane.showMessageDialog(frame, "You should type something in the text field \nTry again");
+		}else 
+		{
 			try {
 				controller.setVisibleResults(false, currentPage);
 				pages = controller.searchIndex(query);
@@ -264,7 +265,15 @@ public class MainWindow {
 				}
 				if(pages == -1){				
 					String [] suggestions = controller.getSuggestions();
-					controller.setSuggestions(suggestions);	
+					if(suggestions.length != 0)
+					{
+						controller.setSuggestions(suggestions);	
+						
+					}else
+					{
+						JOptionPane.showMessageDialog(frame, "Cannot find results for this search \nTry again");
+					}
+					
 				}
 			} catch (IOException | CsvException | ParseException e1) {
 				e1.printStackTrace();

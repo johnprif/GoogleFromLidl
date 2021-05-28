@@ -11,71 +11,64 @@ import java.net.URISyntaxException;
 import javax.swing.JLabel;
 
 public class MListener implements MouseListener
+{
+	String tweet;
+	String link;
+	JLabel myLabel;
+	String userChoise;
+	 	
+	public void setInfo(String tweet, String link, JLabel myLabel)
 	{
-	 	String tweet;
-	 	String link;
-	 	JLabel myLabel;
-	 	String userChoise;
+		this.tweet = tweet;
+	 	this.link = link;
+	 	this.myLabel = myLabel; 
+	}
 	 	
-	 	public void setInfo(String tweet, String link, JLabel myLabel)
-	 	{
-	 		this.tweet = tweet;
-	 		this.link = link;
-	 		this.myLabel = myLabel;
-	 
-	 	}
-	 	
-	    @Override
-	    public void mouseClicked(MouseEvent evt)
+	@Override
+	public void mouseClicked(MouseEvent evt)
+	{   	
+		try{
+			Desktop.getDesktop().browse(new URI(link));
+	    }catch (IOException | URISyntaxException e)
 	    {
-	    	
-	    	try{
-	            Desktop.getDesktop().browse(new URI(link));
-	        }catch (IOException | URISyntaxException e)
-	        {
-	            e.printStackTrace();
-	        }
+	    	e.printStackTrace();
 	    }
+	}
 
-	    @Override
-	    public void mouseExited(MouseEvent evt)
+	@Override
+	public void mouseExited(MouseEvent evt)
+	{	
+		if (tweet != null) 
+		{
+			myLabel.setText(tweet);
+		    myLabel.setForeground(Color.BLACK);
+	    }
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent evt)
+	{
+		if (tweet != null)
 	    {
-	    	
-	    	if (tweet == null) {
-	    		
-	    	}else {
-		    	myLabel.setText(tweet);
-		    	//myLabel.setFont(new Font(Font.PLAIN, 15));
-		    	myLabel.setForeground(Color.BLACK);
-	    	}
+			myLabel.setText(tweet);
+		    myLabel.setForeground(Color.BLUE);
 	    }
+	}
 
-	    @Override
-	    public void mouseEntered(MouseEvent evt)
-	    {
-	    	if (tweet == null) {
-	    		
-	    	}else {
-		    	myLabel.setText(tweet);
-		    	//myLabel.setFont(new Font(Font.PLAIN, 15));
-		    	myLabel.setForeground(Color.BLUE);
-	    	}
+	@Override
+	public void mousePressed(MouseEvent e) 
+	{
+		//nothing
+	}
 
-	    }
-
-	    @Override
-	    public void mousePressed(MouseEvent e) 
-	    {
-
-	    }
-
-	    @Override
-	    public void mouseReleased(MouseEvent e)
-	    {
-
-	    }
+	@Override
+	public void mouseReleased(MouseEvent e)
+	{
+		//nothing
+	}
 	    
-	    public String setChoise() {
-	    	return userChoise;
-	    }
+	public String setChoise()
+	{
+		return userChoise;
+	}
 }

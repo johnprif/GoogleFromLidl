@@ -10,13 +10,11 @@ import java.util.Scanner;
 
 public class HistoryManager 
 {
-	private String query;
 	private ArrayList<String> historyList;
 	private File historyFile;
 	
 	public void create(String query) 
 	{
-		this.query = query;
 		 try {
 	         File f1 = new File("history.txt");
 	         if(!f1.exists()) {
@@ -27,7 +25,6 @@ public class HistoryManager
 	         BufferedWriter bw = new BufferedWriter(fileWritter);
 	         bw.write(query+"\n");
 	         bw.close();
-	         System.out.println("Done");
 	      } catch(IOException e){
 	         e.printStackTrace();
 	      }

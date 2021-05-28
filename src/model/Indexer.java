@@ -44,7 +44,6 @@ public class Indexer {
 		for(int i=0; i<csvData.size(); i++)
 		{
 			String[] temp=csvData.get(i);
-			//System.out.println("1" + temp[0]+"2" +temp[1] +"3"+temp[2] +"4"+temp[3]+"5"+temp[4]+"6"+ temp[5]+"7"+temp[6]+"8"+ temp[7]+"9"+temp[8]+"10"+temp[9]);
 			writer.addDocument(createDocument(temp[0],temp[1],temp[2],temp[3],temp[4],temp[5],temp[6],temp[7],temp[8],temp[9]));
 		}
 	}
