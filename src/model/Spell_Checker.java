@@ -31,7 +31,7 @@ public class Spell_Checker
         System.out.print("\nfinish! ");
         directory.close();       
         chooseAlgorithm("NGramDistance");        
-        suggestions = checker.suggestSimilar(keyWord, 5);
+        suggestions = checker.suggestSimilar(keyWord, 6);
     }
     
     
