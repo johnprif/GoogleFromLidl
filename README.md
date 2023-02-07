@@ -7,3 +7,6 @@
 - front-end: Java Swing
 - CSV parsing: opencsv-5.4
 - Seaching: Apache lucene 8.8.2
+
+#### Below you can see some images from the project
+
