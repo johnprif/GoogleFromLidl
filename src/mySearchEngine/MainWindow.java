@@ -83,7 +83,7 @@ import org.apache.lucene.search.highlight.TokenSources;
 import javax.swing.SwingConstants;
 
 public class MainWindow {
-	private static String INDEX_DIR = "index";
+	private static String INDEX_DIR = "ImportantFiles/index";
 	private static EnglishAnalyzer analyzer;
 	private static FSDirectory dir;
 	private static IndexWriterConfig config;

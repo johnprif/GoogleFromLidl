@@ -23,8 +23,8 @@ public class Spell_Checker
     
 	public Spell_Checker(String keyWord) throws IOException
     {
-        directory = FSDirectory.open(Paths.get("Index_Dictionary"));
-        txt_dict = new PlainTextDictionary(Paths.get("eng_dictionary.txt"));
+        directory = FSDirectory.open(Paths.get("ImportantFiles/Index_Dictionary"));
+        txt_dict = new PlainTextDictionary(Paths.get("ImportantFiles/eng_dictionary.txt"));
         checker = new SpellChecker(directory);
         System.out.print("\nBuilding index from the .txt dictionary... ");
         checker.indexDictionary(txt_dict, new IndexWriterConfig(new KeywordAnalyzer()), false);

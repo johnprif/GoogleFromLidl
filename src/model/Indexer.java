@@ -2,6 +2,7 @@ package model;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.lucene.document.Document;
@@ -12,7 +13,7 @@ import com.opencsv.*;
 import com.opencsv.exceptions.CsvException;
 
 public class Indexer {
-	private String CSV = "file.csv";
+	private String CSV = "ImportantFiles/file.csv";
 	private IndexWriter writer;
 	private List<String[]> csvData;
 	

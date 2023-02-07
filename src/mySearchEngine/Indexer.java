@@ -21,7 +21,7 @@ import com.opencsv.*;
 
 public class Indexer {
 	private String INDEX_DIR;
-	private String CSV = "file.csv";
+	private String CSV = "ImportantFiles/file.csv";
 	private EnglishAnalyzer analyzer;
 	private FSDirectory dir;
 	private IndexWriterConfig config;

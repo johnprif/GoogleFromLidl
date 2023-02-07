@@ -19,7 +19,7 @@ import com.opencsv.exceptions.CsvException;
 
 
 public class Controller {
-	private static String INDEX_DIR = "index";
+	private static String INDEX_DIR = "ImportantFiles/index";
 	private static EnglishAnalyzer analyzer;
 	private static FSDirectory dir;
 	private static IndexWriterConfig config;

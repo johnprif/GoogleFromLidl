@@ -26,8 +26,8 @@ public class Spell_Checker
     {
 		this.keyWord = keyWord;
         // Creating the index
-        directory = FSDirectory.open(Paths.get("Index_Dictionary"));
-        txt_dict = new PlainTextDictionary(Paths.get("eng_dictionary.txt"));
+        directory = FSDirectory.open(Paths.get("ImportantFiles/Index_Dictionary"));
+        txt_dict = new PlainTextDictionary(Paths.get("ImportantFiles/eng_dictionary.txt"));
         checker = new SpellChecker(directory);
 
         System.out.print("\nBuilding index from the .txt dictionary took... ");

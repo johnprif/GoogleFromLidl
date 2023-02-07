@@ -18,7 +18,7 @@ public class HistoryManager
 	{
 		this.query = query;
 		 try {
-	         File f1 = new File("history.txt");
+	         File f1 = new File("ImportantFiles/history.txt");
 	         if(!f1.exists()) {
 	            f1.createNewFile();
 	         }
@@ -37,7 +37,7 @@ public class HistoryManager
 	{
 		historyList = new ArrayList<String>();
         try {
-           historyFile = new File("history.txt");
+           historyFile = new File("ImportantFiles/history.txt");
             Scanner myReader = new Scanner(historyFile);
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
