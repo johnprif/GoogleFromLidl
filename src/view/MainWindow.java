@@ -9,7 +9,7 @@ import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.CardLayout;
-
+import java.awt.Cursor;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -22,14 +22,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.awt.event.ItemListener;
 import java.util.List;
-
 import org.apache.lucene.queryparser.classic.ParseException;
-
 import com.opencsv.exceptions.CsvException;
-
 import controller.Controller;
 import controller.HistoryManager;
-
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
@@ -285,6 +281,7 @@ public class MainWindow {
 	
 	public void initializeFrame() {
 		frame = new JFrame();
+		frame.setTitle("GoogleFromLidl -> v1.0");
 		frame.setSize(1366, 700);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		c = new CardLayout();
@@ -292,7 +289,7 @@ public class MainWindow {
 	}
 	
 	public void initializeLabels() {
-		resultLabel1 = new JLabel();		
+		resultLabel1 = new JLabel();
 		resultLabel2 = new JLabel();
 		resultLabel3 = new JLabel();
 		resultLabel4 = new JLabel();
@@ -309,24 +306,34 @@ public class MainWindow {
 	private void initializeListeners() {
 		result1 = new MListener();
 		resultLabel1.addMouseListener(result1);
+		resultLabel1.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		result2 = new MListener();
 		resultLabel2.addMouseListener(result2);
+		resultLabel2.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		result3 = new MListener();
 		resultLabel3.addMouseListener(result3);
+		resultLabel3.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		result4 = new MListener();
 		resultLabel4.addMouseListener(result4);
+		resultLabel4.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		result5 = new MListener();
 		resultLabel5.addMouseListener(result5);
+		resultLabel5.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		result6 = new MListener();
 		resultLabel6.addMouseListener(result6);
+		resultLabel6.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		result7 = new MListener();
 		resultLabel7.addMouseListener(result7);
+		resultLabel7.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		result8 = new MListener();
 		resultLabel8.addMouseListener(result8);
+		resultLabel8.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		result9 = new MListener();
 		resultLabel9.addMouseListener(result9);
+		resultLabel9.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		result10 = new MListener();
 		resultLabel10.addMouseListener(result10);
+		resultLabel10.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		makeListOfListeners();
 		controller.setListeners(listOfListeners);
 	
@@ -334,11 +341,14 @@ public class MainWindow {
 	public void initializeOtherButtonsAndLabels() {
 		nextPageButton = new JButton("Next Page");
 		nextPageButton.setVisible(false);
+		nextPageButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		pageNumberLabel = new JLabel("Page 1");
 		searchEngineLabel = new JLabel("GoogleFromLidl");
 		queryTextField = new JTextField();
 		searchButton = new JButton("Search");
+		searchButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		clearButton = new JButton("Clear");
+		clearButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		default_b = new JRadioButton("Default");
 		buttonGroup.add(default_b);
 		date = new JRadioButton("Date");
@@ -357,6 +367,7 @@ public class MainWindow {
 		simpleOrderByLabel = new JLabel("Order by:");
 		btnPreviousPage = new JButton("Previous Page"); 
 		btnPreviousPage.setVisible(false);
+		btnPreviousPage.setCursor(new Cursor(Cursor.HAND_CURSOR));
 	}
 	
 	private void intializeComponents(JPanel firstPanel) {

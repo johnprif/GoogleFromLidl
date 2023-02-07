@@ -7,7 +7,6 @@ import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-
 import javax.swing.JLabel;
 
 public class MListener implements MouseListener
