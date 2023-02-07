@@ -78,6 +78,8 @@ public class MainWindow {
 	private int pages;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
 	private final ButtonGroup buttonGroup_1 = new ButtonGroup();
+	private Cursor cursor;
+	
 	
 	public static void main(String[] args) throws IOException, CsvException, ParseException
 	{
@@ -107,6 +109,7 @@ public class MainWindow {
 
 	public void initialize()
 	{
+		cursor = new Cursor(Cursor.HAND_CURSOR);
 		initializeFrame();
 		JPanel panel = new JPanel();
 		initializeLabels();
@@ -306,34 +309,34 @@ public class MainWindow {
 	private void initializeListeners() {
 		result1 = new MListener();
 		resultLabel1.addMouseListener(result1);
-		resultLabel1.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		resultLabel1.setCursor(cursor);
 		result2 = new MListener();
 		resultLabel2.addMouseListener(result2);
-		resultLabel2.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		resultLabel2.setCursor(cursor);
 		result3 = new MListener();
 		resultLabel3.addMouseListener(result3);
-		resultLabel3.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		resultLabel3.setCursor(cursor);
 		result4 = new MListener();
 		resultLabel4.addMouseListener(result4);
-		resultLabel4.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		resultLabel4.setCursor(cursor);
 		result5 = new MListener();
 		resultLabel5.addMouseListener(result5);
-		resultLabel5.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		resultLabel5.setCursor(cursor);
 		result6 = new MListener();
 		resultLabel6.addMouseListener(result6);
-		resultLabel6.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		resultLabel6.setCursor(cursor);
 		result7 = new MListener();
 		resultLabel7.addMouseListener(result7);
-		resultLabel7.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		resultLabel7.setCursor(cursor);
 		result8 = new MListener();
 		resultLabel8.addMouseListener(result8);
-		resultLabel8.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		resultLabel8.setCursor(cursor);
 		result9 = new MListener();
 		resultLabel9.addMouseListener(result9);
-		resultLabel9.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		resultLabel9.setCursor(cursor);
 		result10 = new MListener();
 		resultLabel10.addMouseListener(result10);
-		resultLabel10.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		resultLabel10.setCursor(cursor);
 		makeListOfListeners();
 		controller.setListeners(listOfListeners);
 	
@@ -341,14 +344,14 @@ public class MainWindow {
 	public void initializeOtherButtonsAndLabels() {
 		nextPageButton = new JButton("Next Page");
 		nextPageButton.setVisible(false);
-		nextPageButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		nextPageButton.setCursor(cursor);
 		pageNumberLabel = new JLabel("Page 1");
 		searchEngineLabel = new JLabel("GoogleFromLidl");
 		queryTextField = new JTextField();
 		searchButton = new JButton("Search");
-		searchButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		searchButton.setCursor(cursor);
 		clearButton = new JButton("Clear");
-		clearButton.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		clearButton.setCursor(cursor);
 		default_b = new JRadioButton("Default");
 		buttonGroup.add(default_b);
 		date = new JRadioButton("Date");
@@ -367,7 +370,7 @@ public class MainWindow {
 		simpleOrderByLabel = new JLabel("Order by:");
 		btnPreviousPage = new JButton("Previous Page"); 
 		btnPreviousPage.setVisible(false);
-		btnPreviousPage.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		btnPreviousPage.setCursor(cursor);
 	}
 	
 	private void intializeComponents(JPanel firstPanel) {
