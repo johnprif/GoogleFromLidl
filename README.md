@@ -9,4 +9,5 @@
 - Seaching: Apache lucene 8.8.2
 
 #### Below you can see some images from the project
+![image](https://user-images.githubusercontent.com/56134761/217270067-7924a16b-fbf3-4739-a27b-91b459b6941c.png)
 
