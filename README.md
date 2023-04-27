@@ -1,5 +1,5 @@
 # GoogleFromLidl
-#### It is a search engine developed as part of the 'Information Retrieval' course and concerns tweeter posts posted during the two-year quarantine.
+#### It is a search engine developed as part of the 'Information Retrieval' course and concerns twitter posts posted during the two-year quarantine.
 Regarding the detailed implementation of workshop, the details are listed in the report of workshop separately in pdf
 #### More specifically, it uses the following
 - Eclipse IDE 2020-12
