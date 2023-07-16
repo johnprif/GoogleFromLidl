@@ -1,5 +1,5 @@
 # GoogleFromLidl
-#### It is a search engine application that concerns twitter posts posted during the twoyear quarantine. It has been developed with Java-Java Swing and also uses the Apache Lucene library. It allows the user to be able to type in a field the search term and see the results in the window just like in google divided into tabs as well as redirected to twitter in case he clicks on a result, he can also sort them by relevance, time etc. It uses the MVC pattern. It has easy-to-use graphical interface. The program is packaged in an .exe file.
+#### It is a search engine application that concerns twitter posts posted during the two-year quarantine. It has been developed with Java-Java Swing and also uses the Apache Lucene library. It allows the user to be able to type in a field the search term and see the results in the window just like in google divided into tabs as well as redirected to twitter in case he clicks on a result, he can also sort them by relevance, time etc. It uses the MVC pattern. It has easy-to-use graphical interface. The program is packaged in an .exe file.
 Regarding the detailed implementation of workshop, the details are listed in the report of workshop separately in pdf
 #### More specifically, it uses the following
 - Eclipse IDE 2020-12
