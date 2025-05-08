@@ -99,7 +99,7 @@ Contributions are welcome! Please:
 ## 📬 Contact
 - GitHub: [johnprif](https://github.com/johnprif)
 - Email: [giannispriftis37@gmail.com](mailto:giannispriftis37@gmail.com)
-- Phone: [+306940020178](tel:00306940020178)
+- Phone: [+306940020178](tel:+306940020178)
 
 ## 🙏 Acknowledgements
 - **[othneildrew/Best-README-Template](https://www.hatica.io/blog/best-practices-for-github-readme/?utm_source=chatgpt.com)** for structure inspiration.
