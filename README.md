@@ -39,10 +39,9 @@
 
 ## 🛠️ Technologies
 
-- **Language**: Java 11 :contentReference[oaicite:9]{index=9}  
-- **GUI**: Java Swing (MVC pattern) :contentReference[oaicite:10]{index=10}  
-- **Search Engine**: Apache Lucene 8.x :contentReference[oaicite:11]{index=11}  
-- **Build**: Maven for dependency management and packaging :contentReference[oaicite:12]{index=12}  
+- **Language**: Java 11 
+- **GUI**: Java Swing (MVC pattern) 
+- **Search Engine**: Apache Lucene 8.x
 - **Logging**: SLF4J + Logback  
 
 ## 🚀 Getting Started
@@ -50,7 +49,6 @@
 ### Prerequisites
 
 - Java 11 or higher installed  
-- Maven 3.x installed  
 
 ### Installation
 
@@ -58,12 +56,6 @@
 # Clone the repo
 git clone https://github.com/johnprif/GoogleFromLidl.git
 cd GoogleFromLidl
-
-# Build the JAR
-mvn clean package
-
-# Run the app
-java -jar target/GoogleFromLidl-1.0.jar
 ```
 
 ## 💡 Usage
