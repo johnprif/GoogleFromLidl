@@ -13,12 +13,11 @@
 5. [Getting Started](#🚀-getting-started)  
 6. [Usage](#usage)  
 7. [Architecture](#🏗-architecture)  
-8. [Testing](#✅-testing)  
-9. [Contributing](#🤝-contributing)  
-10. [License](#📄-license--contact) 
-11. [Contact](#📬-contact) 
-12. [Acknowledgements](#🙏-acknowledgements)  
-13. [Changelog](#📝-changelog)  
+8. [Contributing](#🤝-contributing)  
+9. [License](#📄-license--contact) 
+10. [Contact](#📬-contact) 
+11. [Acknowledgements](#🙏-acknowledgements)  
+12. [Changelog](#📝-changelog)  
 
 ## Overview
 
@@ -93,14 +92,6 @@ java -jar target/GoogleFromLidl-1.0.jar
 - **Analyzer:** `StandardAnalyzer` (with optional custom stop-word list) tokenizes, lower-cases, and filters terms during both indexing and querying.
 
 Lucene's `FSDirectory.open(Paths.get(indexPath))` chooses the optimal file-system implementation (SimpleFSDirectory, NIOFSDirectory, or MMapDirectory) based on the environment.
-
-## ✅ Testing
-- **Unit tests** with JUnit 5 for parser, analyzer, and query builder modules.
-- **Integrattion tests** index sample tweets and verify expected hits.
-- Run all tests via Maven:
-```bash
-mvn test
-```
 
 ## 🤝 Contributing
 Contributions are welcome! Please:
