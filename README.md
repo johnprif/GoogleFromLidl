@@ -6,7 +6,7 @@
 ## 📋 Table of Contents
 
 1. [Overview](#overview)  
-2. [Features](#--features)  
+2. [Features](#features)  
 3. [Screenshots](#🖼️-screenshots)  
 4. [Technologies](#🛠️-technologies)  
 5. [Getting Started](#🚀-getting-started)  
@@ -22,7 +22,7 @@
 
 “GoogleFromLidl” is a **Java Swing** desktop application that lets you index and search Twitter comments using **Apache Lucene**. It loads raw tweet data, builds an inverted index, and provides instant full‑text queries with ranking. Use it to explore public sentiment, debug NLP pipelines, or prototype search features in pure Java.
 
-## 🔥 Features
+## Features
 
 - **Full‑text indexing** of tweet JSON files using Lucene’s `StandardAnalyzer` for tokenization and stemming.  
 - **Advanced query syntax**: boolean operators, phrase search, wildcard, fuzzy matching.  
