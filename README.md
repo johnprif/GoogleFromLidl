@@ -1,7 +1,7 @@
 # GoogleFromLidl
 > A desktop search‑engine app over Twitter comments, built in Java Swing with Apache Lucene full‑text indexing. Scan large volumes of tweets, perform keyword queries, and explore results in a rich GUI.  
 
-[Download Latest Release (screencast)](https://github.com/johnprif/GoogleFromLidl/releases/tag/Stable)
+[Download Latest Release (Windows Executable)](https://github.com/johnprif/GoogleFromLidl/releases/tag/Stable)
 
 ## 📋 Table of Contents
 
