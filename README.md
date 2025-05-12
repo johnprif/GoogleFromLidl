@@ -13,7 +13,7 @@
 6. [Usage](#usage)  
 7. [Architecture](#architecture)  
 8. [Contributing](#contributing)  
-9. [License](#license--contact) 
+9. [License](#license) 
 10. [Contact](#contact) 
 11. [Acknowledgements](#acknowledgements)  
 12. [Changelog](#changelog)  
