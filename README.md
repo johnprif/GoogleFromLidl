@@ -7,16 +7,16 @@
 
 1. [Overview](#overview)  
 2. [Features](#features)  
-3. [Screenshots](#🖼️-screenshots)  
-4. [Technologies](#🛠️-technologies)  
-5. [Getting Started](#🚀-getting-started)  
+3. [Screenshots](#screenshots)  
+4. [Technologies](#technologies)  
+5. [Getting Started](#getting-started)  
 6. [Usage](#usage)  
-7. [Architecture](#🏗-architecture)  
-8. [Contributing](#🤝-contributing)  
-9. [License](#📄-license--contact) 
-10. [Contact](#📬-contact) 
-11. [Acknowledgements](#🙏-acknowledgements)  
-12. [Changelog](#📝-changelog)  
+7. [Architecture](#architecture)  
+8. [Contributing](#contributing)  
+9. [License](#license--contact) 
+10. [Contact](#contact) 
+11. [Acknowledgements](#acknowledgements)  
+12. [Changelog](#changelog)  
 
 ## Overview
 
@@ -30,20 +30,20 @@
 - **Configurable indexing**: select fields (user, date, text), adjust analyzer settings.  
 - **Export results** to CSV for downstream analysis.  
 
-## 🖼️ Screenshots
+## Screenshots
 
 <p align="center">  
   <img src="https://user-images.githubusercontent.com/56134761/217270067-7924a16b-fbf3-4739-a27b-91b459b6941c.png" alt="Search Results" width="400"/>  
 </p>
 
-## 🛠️ Technologies
+## Technologies
 
 - **Language**: Java 11 
 - **GUI**: Java Swing (MVC pattern) 
 - **Search Engine**: Apache Lucene 8.x
 - **Logging**: SLF4J + Logback  
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -57,14 +57,14 @@ git clone https://github.com/johnprif/GoogleFromLidl.git
 cd GoogleFromLidl
 ```
 
-## 💡 Usage
+## Usage
 1. **Load Tweets:** File -> Open JSON directory (each file contains tweet objects).
 2. **Index:** Click "Build Index" to parse and index all tweets.
 3. **Search:** Enter keywords or expressions in the search bar then press Enter.
 4. **Inspect:** Click any result to view full tweet details and metadata.
 5. **Export:** Results -> Export to CSV.
 
-## 🏗 Architecture
+## Architecture
 ```plaintext
 +----------------+      +-----------------+      +------------------+
 | Swing GUI      | <--> | Controller      | <--> | Lucene Index API |
@@ -84,7 +84,7 @@ cd GoogleFromLidl
 
 Lucene's `FSDirectory.open(Paths.get(indexPath))` chooses the optimal file-system implementation (SimpleFSDirectory, NIOFSDirectory, or MMapDirectory) based on the environment.
 
-## 🤝 Contributing
+## Contributing
 Contributions are welcome! Please:
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/foo`)
@@ -92,19 +92,19 @@ Contributions are welcome! Please:
 4. Push (`git push oprigin feature/foo`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 **MIT License.** See [LICENSE](https://github.com/johnprif/GoogleFromLidl/blob/main/LICENSE)
 
-## 📬 Contact
+## Contact
 - GitHub: [johnprif](https://github.com/johnprif)
 - Email: [giannispriftis37@gmail.com](mailto:giannispriftis37@gmail.com)
 - Phone: [+306940020178](tel:+306940020178)
 
-## 🙏 Acknowledgements
+## Acknowledgements
 - **[othneildrew/Best-README-Template](https://www.hatica.io/blog/best-practices-for-github-readme/?utm_source=chatgpt.com)** for structure inspiration.
 - **[FreeCodeCamp](https://github.com/Louis3797/awesome-readme-template?utm_source=chatgpt.com)** article on witing good READMEs
 - **[GitHub Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax?utm_source=chatgpt.com)** on basic Markdown syntax and TOC support.
 - **[Hatica blog](https://www.hatica.io/blog/best-practices-for-github-readme/?utm_source=chatgpt.com)** on eye-catching README design.
 
-## 📝 Changelog
+## Changelog
 - **v1.0** (2023-04-27): Initial release.
