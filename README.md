@@ -96,8 +96,8 @@ Contributions are welcome! Please:
 **MIT License.** See [LICENSE](https://github.com/johnprif/GoogleFromLidl/blob/main/LICENSE)
 
 ## Contact
-- GitHub: [johnprif](https://github.com/johnprif)
-- Email: [giannispriftis37@gmail.com](mailto:giannispriftis37@gmail.com)
+- GitHub: [johnprif](https://github.com/joanisprifti)
+- Email: [joanisprifti@gmail.com](mailto:joanisprifti@gmail.com)
 - Phone: [+306940020178](tel:+306940020178)
 
 ## Acknowledgements
